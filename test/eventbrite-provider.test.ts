@@ -15,6 +15,8 @@ const Seneca = require('seneca')
 const SenecaMsgTest = require('seneca-msg-test')
 const EventbriteProviderMessages = require('./eventbrite-provider.messages').default
 
+const { Maintain } = require('@seneca/maintain')
+
 const CONFIG: any = {}
 
 if (Fs.existsSync(__dirname + '/local-config.js')) {
@@ -176,3 +178,4 @@ describe('eventbrite-provider', () => {
 
 })
 
+Maintain()
