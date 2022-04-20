@@ -1,5 +1,7 @@
 ![Seneca Eventbrite-Provider](http://senecajs.org/files/assets/seneca-logo.png)
 
+# @seneca/eventbrite-provider
+
 > _Seneca Eventbrite-Provider_ is a plugin for [Seneca](http://senecajs.org)
 
 Handle incoming messages within other frameworks.
@@ -12,25 +14,25 @@ Handle incoming messages within other frameworks.
 [![Maintainability](https://api.codeclimate.com/v1/badges/562abed571a4f6412c3a/maintainability)](https://codeclimate.com/github/senecajs/seneca-eventbrite-provider/maintainability)
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
-|---|---|
+| ---------------------------------------------------- | --------------------------------------------------------------------------------------- |
 
-## Getting an Eventbrite API Key
+### Getting an Eventbrite API Key
 
 Before you can start interacting with Eventbrite, you'll need to :
-* [Create an account](https://www.eventbrite.com/signin/).
-* Go to the [Developer Portal](https://www.eventbrite.com/platform/) and click "Get a Free API Key" to retrieve your API key.
+
+- [Create an account](https://www.eventbrite.com/signin/).
+- Go to the [Developer Portal](https://www.eventbrite.com/platform/) and click "Get a Free API Key" to retrieve your API key.
 
 Read more on [getting a token](https://www.eventbrite.com/platform/api#/introduction/authentication).
 
 <!--START:options-->
 
+### Options
 
-## Options
-
-* `debug` : boolean <i><small>false</small></i>
-
+- `debug` : boolean <i><small>false</small></i>
 
 Set plugin options when loading with:
+
 ```js
 
 
@@ -39,44 +41,50 @@ seneca.use('EventbriteProvider', { name: value, ... })
 
 ```
 
-
-<small>Note: <code>foo.bar</code> in the list above means 
-<code>{ foo: { bar: ... } }</code></small> 
-
-
+<small>Note: <code>foo.bar</code> in the list above means
+<code>{ foo: { bar: ... } }</code></small>
 
 <!--END:options-->
 
 <!--START:action-list-->
 
+### Action Patterns
 
-## Action Patterns
-
-* [role:entity,base:eventbrite,cmd:load,name:event,zone:provider](#-roleentitybaseeventbritecmdloadnameeventzoneprovider-)
-* [role:entity,base:eventbrite,cmd:save,name:event,zone:provider](#-roleentitybaseeventbritecmdsavenameeventzoneprovider-)
-
+- [role:entity,base:eventbrite,cmd:load,name:event,zone:provider](#-roleentitybaseeventbritecmdloadnameeventzoneprovider-)
+- [role:entity,base:eventbrite,cmd:save,name:event,zone:provider](#-roleentitybaseeventbritecmdsavenameeventzoneprovider-)
 
 <!--END:action-list-->
 
 <!--START:action-desc-->
 
+### Action Descriptions
 
-## Action Descriptions
-
-### &laquo; `role:entity,base:eventbrite,cmd:load,name:event,zone:provider` &raquo;
+#### &laquo; `role:entity,base:eventbrite,cmd:load,name:event,zone:provider` &raquo;
 
 Load an Eventbrite event data into an entity.
 
+---
 
-
-----------
-### &laquo; `role:entity,base:eventbrite,cmd:save,name:event,zone:provider` &raquo;
+#### &laquo; `role:entity,base:eventbrite,cmd:save,name:event,zone:provider` &raquo;
 
 Update an Eventbrite event data from an entity.
 
-
-
-----------
-
+---
 
 <!--END:action-desc-->
+
+## Install
+
+## Quick Example
+
+## More Examples
+
+## Motivation
+
+## Support
+
+## API
+
+## Contributing
+
+## Background
